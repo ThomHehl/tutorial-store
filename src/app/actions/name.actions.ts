@@ -1,5 +1,4 @@
 import { Action } from '@ngrx/store'
-import { NameService } from '../services/name.service';
 
 export const LOAD_NAME         = '[string] Load Name';
 
