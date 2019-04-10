@@ -16,6 +16,6 @@ app.get('/getName', function (request, response) {
   response.writeHead(200, {'Content-Type': 'text/plain'});
 
   var idx = Math.floor(Math.random() * names.length);
-  var answer = '{"name":"' + names[idx] + '"}'
-  response.end(answer);
+  var answer = {name:names[idx]};
+  response.end(JSON.stringify(answer));
 });
