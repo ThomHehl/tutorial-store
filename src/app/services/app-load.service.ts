@@ -16,7 +16,6 @@ export class AppLoadService {
   loadName(): void {
     this.nameService.getName().pipe(take(1))
       .subscribe((target: GreetingTarget) => {
-        console.log('new name', target.name);
         this.store.dispatch(new NameActions.LoadName(target.name));
       });
   }
