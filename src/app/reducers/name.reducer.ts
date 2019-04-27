@@ -1,6 +1,6 @@
 import * as NameActions from '../actions/name.actions'
 
-const initial: string = '';
+const initial: = '';
 
 export function nameReducer(state: string = initial, action: NameActions.Actions): string {
   switch(action.type) {
